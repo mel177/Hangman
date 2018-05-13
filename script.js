@@ -168,3 +168,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+$("#animate").click(function(){
+    dropBody();
+    $("#rEyes").addClass("hide");
+    $("#xEyes").removeClass("hide");
+});
+
+function dropBody () {
+  $("#door1").velocity({rotateZ: 90}, 1000);
+  $("#door2").velocity({rotateZ: -90}, 1000);
+  fall();  
+}
