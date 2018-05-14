@@ -117,6 +117,11 @@ stickFigure();
     $("#armR").removeClass("hide");
     }else if(lives_left === 5){
     $("#legL").removeClass("hide"); 
+    }else if(lives_left === 4){
+    $("#legR").removeClass("hide"); 
+    }else if(lives_left === 3){
+    $("#rEyes").removeClass("hide"); 
+
     }
 };
 
