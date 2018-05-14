@@ -100,11 +100,26 @@ var Hangman = function(elem)
         renderDisplayedWord();
         DOM_lives_left.innerHTML = "Lives left: " + lives_left;
         evaluateResult();
+stickFigure();
         if (game_complete) {
             DOM_game_message.innerHTML = game_complete;
         }
         renderButtons(game_complete);
     };
+    function stickFigure() {
+    if(lives_left === 9){
+    $("#head").removeClass("hide");
+    }else if(lives_left === 8){
+    $("#torso").removeClass("hide");
+    }else if(lives_left === 7){
+    $("#armL").removeClass("hide");
+    }else if(lives_left === 6){
+    $("#armR").removeClass("hide");
+    }else if(lives_left === 5){
+    $("#legL").removeClass("hide"); 
+    }
+};
+
 
     function renderDisplayedWord() {
         displayed_word = "";
