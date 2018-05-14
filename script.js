@@ -3,7 +3,10 @@ var Hangman = function(elem) {
     var alphabet = "abcdefghijklmnopqrstuvwxyz",
         request,
         word = "computers",
-        word_list = ["smoothie", "summer", "awkward", "apple", "exception", "beach", "football", "winner", "mario", "pokemon", "unicorn", "define", "freezes", "packers"],
+        word_list = ["smoothie", "summer", "awkward", "apple", "exception", 
+        "beach", "football", "winner", "rockets", "diploma", "galaxy", "tennis", 
+        "programming", "bike", "grill", "university",
+        "mario", "pokemon", "unicorn", "define", "freezes", "packers"],
         word_length,
         letters_guessed = [],
         
