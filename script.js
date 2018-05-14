@@ -1,4 +1,7 @@
-var Hangman = function(elem) {
+var Hangman = function(elem)
+
+
+{
 
     var alphabet = "abcdefghijklmnopqrstuvwxyz",
         request,
@@ -11,7 +14,7 @@ var Hangman = function(elem) {
         letters_guessed = [],
         
         displayed_word,
-        lives_left = 7,
+        lives_left = 10,
         game_complete = false;
         
     // create DOM elements
@@ -170,6 +173,8 @@ document.addEventListener('DOMContentLoaded', function() {
         new Hangman(hangman_div);
     });
 });
+
+
 
 $("#animate").click(function(){
     dropBody();
